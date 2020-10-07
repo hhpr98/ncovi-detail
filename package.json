@@ -1,0 +1,23 @@
+{
+  "name": "ncovi_detail",
+  "version": "1.0.0",
+  "description": "xem thống kê NCOVI dựa vào API của Bộ Y tế",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hhpr98/NCOVI_detail.git"
+  },
+  "author": "nguyenhuuhoa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hhpr98/NCOVI_detail/issues"
+  },
+  "homepage": "https://github.com/hhpr98/NCOVI_detail#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
