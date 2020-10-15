@@ -1,0 +1,24 @@
+<table class="table table-striped table-dark">
+    <thead>
+        <tr>
+            <th scope="col" class="text-info">Tỉnh/vùng</th>
+            <th scope="col" class="text-info text-center">Số ca nhiễm</th>
+            <th scope="col" class="text-info text-center">Tử vong</th>
+            <th scope="col" class="text-info text-center">Bình phục</th>
+            <th scope="col" class="text-info text-center">Tăng lên</th>
+            <th scope="col" class="text-info text-center">Cập nhật gần nhất</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each data}}
+        <tr>
+            <th scope="row">{{province_name}}</th>
+            <td class="text-center">{{confirmed}}</td>
+            <td class="text-center">{{deaths}}</td>
+            <td class="text-center">{{recovered}}</td>
+            <td class="text-center">{{increase_deaths}}</td>
+            <td class="text-center">{{updated}}</td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
