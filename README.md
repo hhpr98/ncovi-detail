@@ -6,7 +6,7 @@ xem thống kê NCOVI dựa vào API của Bộ Y tế
 1. **API**
 
    ```sh
-   # document
+   # API
    https://ncovi.vnpt.vn/thongtindichbenh_v2
    ```
 
