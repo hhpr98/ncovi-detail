@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./app.js"
+    "start": "node ./app.js",
+    "start:dev": "nodemon -exec && node ./app.js"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
@@ -14,5 +15,8 @@
     "moment": "^2.29.1",
     "morgan": "~1.9.1",
     "node-fetch": "^2.6.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.5"
   }
 }

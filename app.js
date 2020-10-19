@@ -3,6 +3,8 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+const hbs = require("hbs");
+const moment = require('moment');
 
 var indexRouter = require('./routes/index');
 
@@ -11,6 +13,9 @@ var app = express();
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
+hbs.registerHelper("formatDateHelper", function (timestamp) {
+  return moment(timestamp, "X").utcOffset("+0700").format('HH:mm:ss DD/MM/YYYY');
+});
 
 app.use(logger('dev'));
 app.use(express.json());
