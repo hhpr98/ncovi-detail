@@ -28,7 +28,7 @@ router.get("/vietnam", (req, res) => {
         dat.sort((a, b) => {
           return b.confirmed - a.confirmed;
         });
-        res.render("detail/vietnam", { data: dat });
+        res.render("detail/vietnam", { data: dat, layout: "layout/layout2" });
       })
       .catch(err => console.log("API VIETNAM FAIL!!!!!" + err));
 
@@ -52,7 +52,7 @@ router.get("/world", (req, res) => {
         dat.sort((a, b) => {
           return b.confirmed - a.confirmed;
         });
-        res.render("detail/world", { data: dat });
+        res.render("detail/world", { data: dat, layout: "layout/layout2" });
       })
       .catch(err => console.log("API World FAIL!!!!!" + err));
 
