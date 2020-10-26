@@ -1,6 +1,15 @@
 # NCOVI_detail
 xem thống kê NCOVI dựa vào API của Bộ Y tế
 
+## 🚀 Deploying at heroku
+
+1. **website**
+
+   ```sh
+   https://ncovi-detail.herokuapp.com/
+   ```
+
+
 ## 🚀 Documentation
 
 1. **API**
