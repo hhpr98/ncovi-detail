@@ -17,6 +17,10 @@ hbs.registerHelper("formatDateHelper", function (timestamp) {
   return moment(timestamp, "X").utcOffset("+0700").format('HH:mm:ss DD/MM/YYYY');
 });
 
+hbs.registerHelper("formatUnitPeople", function (numberOfPeople) {
+  return numberOfPeople.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,');
+});
+
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));

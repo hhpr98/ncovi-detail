@@ -13,10 +13,10 @@
         {{#each data}}
         <tr>
             <th scope="row">{{province_name}}</th>
-            <td class="text-center">{{confirmed}}</td>
-            <td class="text-center">{{deaths}}</td>
-            <td class="text-center">{{recovered}}</td>
-            <td class="text-center">{{increase_deaths}}</td>
+            <td class="text-center">{{formatUnitPeople confirmed}}</td>
+            <td class="text-center">{{formatUnitPeople deaths}}</td>
+            <td class="text-center">{{formatUnitPeople recovered}}</td>
+            <td class="text-center">{{formatUnitPeople increase_deaths}}</td>
             <td class="text-center">{{formatDateHelper last_update}}</td>
         </tr>
         {{/each}}
