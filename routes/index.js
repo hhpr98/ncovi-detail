@@ -6,7 +6,7 @@ const router = express.Router();
 const api = "https://ncovi.vnpt.vn/thongtindichbenh_v2";
 
 /* GET home page. */
-router.get('/', function (req, res, next) {
+router.get('/', function (req, res) {
   res.render('index');
 });
 
@@ -28,7 +28,7 @@ router.get("/vietnam", (req, res) => {
         dat.sort((a, b) => {
           return b.confirmed - a.confirmed;
         });
-        res.render("detail/vietnam", { data: dat, layout: "layout/layout2" });
+        res.render("detail/detail", { data: dat, region: "Tỉnh/vùng", layout: "layout/layout2" });
       })
       .catch(err => console.log("API VIETNAM FAIL!!!!!" + err));
 
@@ -52,7 +52,7 @@ router.get("/world", (req, res) => {
         dat.sort((a, b) => {
           return b.confirmed - a.confirmed;
         });
-        res.render("detail/world", { data: dat, layout: "layout/layout2" });
+        res.render("detail/detail", { data: dat, region: "Nước/lãnh thổ", layout: "layout/layout2" });
       })
       .catch(err => console.log("API World FAIL!!!!!" + err));
 
