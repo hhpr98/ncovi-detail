@@ -5,9 +5,11 @@ name: Node.js CI for ncovi detail project
 
 on:
   push:
-    branches: [ "main", "I-6" ]
+    branches:
+    - main
+    - 'I-**'
   pull_request:
-    branches: [ "main", "I-6" ]
+    branches: [ "main" ]
 
 jobs:
   build:
