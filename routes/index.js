@@ -1,15 +1,14 @@
 const express = require('express');
-const fetch = require('node-fetch');
+// const fetch = require('node-fetch');
+const homeRouter = require('./home');
 
 const router = express.Router();
 
-const api = "https://ncovi.vnpt.vn/thongtindichbenh_v2";
+// const api = "https://ncovi.vnpt.vn/thongtindichbenh_v2";
 
-/* GET home page. */
-router.get('/', function (req, res) {
-  res.render('index');
-});
+router.use('/', homeRouter);
 
+/*
 router.get("/vietnam", (req, res) => {
   // get api
   (async () => {
@@ -58,5 +57,6 @@ router.get("/world", (req, res) => {
 
   })();
 });
+*/
 
 module.exports = router;
