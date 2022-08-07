@@ -1,10 +1,10 @@
 const express = require('express');
 const homeRouter = express.Router();
 
-const options = { layout: 'layout/main' };
+const defaultOptions = { layout: 'layout/main' };
 
 homeRouter.get('/', function (req, res) {
-    res.render('index', options);
+    res.render('home/index', defaultOptions);
 });
 
 module.exports = homeRouter;
