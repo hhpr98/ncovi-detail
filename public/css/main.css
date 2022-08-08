@@ -1,0 +1,45 @@
+.location {
+    width: 120px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 10px darkblue solid;
+    margin: 10px 0 0 0;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 15vh;
+    border-left: 1vw white solid;
+    border-right: 1vw white solid;
+}
+
+.block-sub-title {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.block-stats {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.block-case {
+    background-color: lightsalmon;
+}
+
+.block-treating {
+    background-color: lightskyblue;
+}
+
+.block-recovered {
+    background-color: lightgreen;
+}
+
+.block-death {
+    background-color: lightgray;
+}

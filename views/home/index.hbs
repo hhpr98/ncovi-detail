@@ -1,7 +1,51 @@
-<h1>Dự án thống kê số ca mắc NCOVI (COVID19)</h1>
-<p>Welcome to NCOVI detail project</p>
-<div class="mb-4">
-    <button type="input" class="btn-danger" onclick="window.location.href='/vietnam'">Xem thống kê của Việt Nam</button>
-    hoặc
-    <button type="input" class="btn-warning" onclick="window.location.href='/world'">Xem thống kê của Thế giới</button>
+<div class="bg-info text-center mt-4 header-title">
+    <h3 class="text-white"><b>THỐNG KÊ SỐ CA MẮC COVID19</b></h3>
+</div>
+{{!-- VietNam --}}
+<div class="text-white bg-success location mt-4">Việt Nam</div>
+<div class="row mt-4 mb-4">
+    <div class="col-3 block block-case">
+        <div class="block-sub-title">SỐ CA NHIỄM</div>
+        <div class="block-stats text-danger">{{total.internal.cases}}</div>
+        <div>Hôm nay: <b class="text-danger">↑{{today.internal.cases}}</b></div>
+    </div>
+    <div class="col-3 block block-treating">
+        <div class="block-sub-title">ĐANG ĐIỀU TRỊ</div>
+        <div class="block-stats text-primary">{{total.internal.treating}}</div>
+        <div>Hôm nay: <b class="text-primary">↑{{today.internal.treating}}</b></div>
+    </div>
+    <div class="col-3 block block-recovered">
+        <div class="block-sub-title">KHỎI</div>
+        <div class="block-stats text-success">{{total.internal.recovered}}</div>
+        <div>Hôm nay: <b class="text-success">↑{{today.internal.recovered}}</b></div>
+    </div>
+    <div class="col-3 block block-death">
+        <div class="block-sub-title">TỬ VONG</div>
+        <div class="block-stats text-secondary">{{total.internal.death}}</div>
+        <div>Hôm nay: <b class="text-secondary">↑{{today.internal.death}}</b></div>
+    </div>
+</div>
+{{!-- World --}}
+<div class="text-white bg-success location">Thế giới</div>
+<div class="row mt-4 mb-4">
+    <div class="col-3 block block-case">
+        <div class="block-sub-title">SỐ CA NHIỄM</div>
+        <div class="block-stats text-danger">{{total.world.cases}}</div>
+        <div>Hôm nay: <b class="text-danger">↑{{today.world.cases}}</b></div>
+    </div>
+    <div class="col-3 block block-treating">
+        <div class="block-sub-title">ĐANG ĐIỀU TRỊ</div>
+        <div class="block-stats text-primary">{{total.world.treating}}</div>
+        <div>Hôm nay: <b class="text-primary">↑{{today.world.treating}}</b></div>
+    </div>
+    <div class="col-3 block block-recovered">
+        <div class="block-sub-title">KHỎI</div>
+        <div class="block-stats text-success">{{total.world.recovered}}</div>
+        <div>Hôm nay: <b class="text-success">↑{{today.world.recovered}}</b></div>
+    </div>
+    <div class="col-3 block block-death">
+        <div class="block-sub-title">TỬ VONG</div>
+        <div class="block-stats text-secondary">{{total.world.death}}</div>
+        <div>Hôm nay: <b class="text-secondary">↑{{today.world.death}}</b></div>
+    </div>
 </div>

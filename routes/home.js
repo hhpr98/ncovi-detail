@@ -1,10 +1,8 @@
 const express = require('express');
 const homeRouter = express.Router();
+const { getStatsForHomePage } = require('../controllers/homeController');
 
-const defaultOptions = { layout: 'layout/main' };
 
-homeRouter.get('/', function (req, res) {
-    res.render('home/index', defaultOptions);
-});
+homeRouter.get('/', getStatsForHomePage);
 
 module.exports = homeRouter;
