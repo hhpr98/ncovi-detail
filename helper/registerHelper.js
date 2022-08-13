@@ -19,4 +19,13 @@ exports.registerHelper = () => {
     hbs.registerHelper('ifNotEquals', function (arg1, arg2, options) {
         return (arg1 == arg2) ? options.inverse(this) : options.fn(this);
     });
+
+    hbs.registerHelper('increaseIndex', function (index) {
+        try {
+            const parser = +index;
+            return (parser + 1).toString();
+        } catch (err) {
+            return 'N/A';
+        }
+    });
 }

@@ -1,0 +1,26 @@
+<div class="table-bound">
+    <table class="table table-sm table-dark mt-4">
+        <thead>
+            <tr>
+                <th scope="col" class="ws-5">#</th>
+                <th scope="col" class="ws-15">Địa bàn</th>
+                <th scope="col" class="ws-15">Tổng số ca <small>(Hôm nay)</small></th>
+                <th scope="col" class="ws-15">Tử vong</th>
+                <th scope="col" class="ws-15">Điều trị</th>
+                <th scope="col" class="ws-15">Bình phục</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each locations}}
+            <tr>
+                <th scope="row">{{increaseIndex @index}}</th>
+                <td>{{name}}</td>
+                <td>{{cases}} <small>↑{{casesToday}}</small></td>
+                <td>{{death}}</td>
+                <td>{{treating}}</td>
+                <td>{{recovered}}</td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</div>
