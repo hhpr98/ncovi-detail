@@ -1,9 +1,11 @@
-const defaultData = require('../data/data20220808.json');
-const { headers } = require('../utils/const/requestHeader');
 const fetch = require('node-fetch');
 
+const defaultData = require('../data/data20220808.json');
+const { headers } = require('../utils/const/requestHeader');
+const { URL } = require('../API/URL');
+
 const getStatsForAllProvinces = (req, res) => {
-    fetch("https://static.pipezero.com/covid/data.json", {
+    fetch(`${URL}`, {
         method: 'GET',
         headers,
     })
