@@ -1,0 +1,11 @@
+.header-nav-item:hover {
+    cursor: pointer;
+    background-color: #1c8a9b;
+}
+
+.header-title {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
