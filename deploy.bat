@@ -1,6 +1,8 @@
+@echo OFF
+
 :: Heroku login, please uncomment it if you do not login into heroku
-heroku login
+call heroku login
 :: Set remote heroku
-heroku git:remote -a ncovi-detail
+call heroku git:remote -a ncovi-detail
 :: Deploy to heroku
-git push heroku main
+call git push heroku main
