@@ -22,7 +22,6 @@
     width: 30%;
 }
 
-.table-bound {
-    height: 50% !important;
-    overflow-y: auto;
+.table-responsive {
+    max-height:85vh;
 }
