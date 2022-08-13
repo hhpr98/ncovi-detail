@@ -7,8 +7,8 @@
             <th scope="col" class="ws-15">Địa bàn</th>
             <th scope="col" class="ws-15">Tổng số ca <small class="text-danger">↑Hôm nay</small></th>
             <th scope="col" class="ws-15">Tử vong</th>
-            <th scope="col" class="ws-10">Điều trị</th>
-            <th scope="col" class="ws-10">Bình phục</th>
+            <th scope="col" class="ws-15 text-center">Điều trị</th>
+            <th scope="col" class="ws-15 text-center">Bình phục</th>
         </tr>
     </thead>
     <tbody>
@@ -18,8 +18,8 @@
             <td>{{name}}</td>
             <td>{{cases}} <small class="text-danger">↑{{casesToday}}</small></td>
             <td>{{death}}</td>
-            <td>{{treating}}</td>
-            <td>{{recovered}}</td>
+            <td class="text-center">{{treating}}</td>
+            <td class="text-center">{{recovered}}</td>
         </tr>
         {{/each}}
     </tbody>
