@@ -1,9 +1,11 @@
-<canvas id="ncovidChart" width="200" height="200"></canvas>
-<input type="hidden" id="dateCheat" value={{date}} />
-<input type="hidden" id="casesCheat" value={{cases}} />
-<input type="hidden" id="treatingCheat" value={{treating}} />
-<input type="hidden" id="recoveredCheat" value={{recovered}} />
-<input type="hidden" id="deathCheat" value={{death}} />
+<div class="chart-tab">
+    <canvas id="ncovidChart" width="200" height="200"></canvas>
+    <input type="hidden" id="dateCheat" value={{date}} />
+    <input type="hidden" id="casesCheat" value={{cases}} />
+    <input type="hidden" id="treatingCheat" value={{treating}} />
+    <input type="hidden" id="recoveredCheat" value={{recovered}} />
+    <input type="hidden" id="deathCheat" value={{death}} />
+</div>
 <script>
     var date = document.getElementById('dateCheat').value.split(',');
     var cases = document.getElementById('casesCheat').value.split(',');
