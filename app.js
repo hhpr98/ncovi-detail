@@ -3,7 +3,7 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-const { registerHelper } = require('./libs/registerHelper');
+const { registerHelper } = require('./utils/registerHelper');
 
 var indexRouter = require('./routes/index');
 
@@ -35,7 +35,7 @@ app.use(function (err, req, res, next) {
 
   // render the error page
   res.status(err.status || 500);
-  res.render('error');
+  res.render('layout/error');
 });
 
 // Init port : default port = 3737
