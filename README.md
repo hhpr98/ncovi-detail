@@ -15,8 +15,7 @@ xem thống kê NCOVI dựa vào API của Bộ Y tế
 1. **API**
 
    ```sh
-   # API
-   https://ncovi.vnpt.vn/thongtindichbenh_v2
+   https://static.pipezero.com/covid/data.json
    ```
 
 
@@ -25,13 +24,10 @@ xem thống kê NCOVI dựa vào API của Bộ Y tế
 1. **Install dependencies.**
 
    ```sh
-   # install the dependencies
    npm install
    ```
 
 2. **Start developing.**
-
    ```sh
-   # "start": "node app.js"
-   npm start
+   npm run dev
    ```
