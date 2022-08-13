@@ -1,38 +1,60 @@
 <canvas id="ncovidChart" width="200" height="200"></canvas>
+<input type="hidden" id="dateCheat" value={{date}} />
+<input type="hidden" id="casesCheat" value={{cases}} />
+<input type="hidden" id="treatingCheat" value={{treating}} />
+<input type="hidden" id="recoveredCheat" value={{recovered}} />
+<input type="hidden" id="deathCheat" value={{death}} />
 <script>
+    var date = document.getElementById('dateCheat').value.split(',');
+    var cases = document.getElementById('casesCheat').value.split(',');
+    var treating = document.getElementById('treatingCheat').value.split(',');
+    var recovered = document.getElementById('recoveredCheat').value.split(',');
+    var death = document.getElementById('deathCheat').value.split(',');
     const ctx = document.getElementById('ncovidChart').getContext('2d');
     new Chart(ctx, {
         type: 'radar',
         data: {
-            labels: [
-                'Eating',
-                'Drinking',
-                'Sleeping',
-                'Designing',
-                'Coding',
-                'Cycling',
-                'Running'
-            ],
+            labels: date,
             datasets: [{
-                label: 'My First Dataset',
-                data: [65, 59, 90, 81, 56, 55, 40],
+                label: 'Số ca',
+                data: cases,
                 fill: true,
                 backgroundColor: 'rgba(255, 99, 132, 0.2)',
-                borderColor: 'rgb(255, 99, 132)',
-                pointBackgroundColor: 'rgb(255, 99, 132)',
+                borderColor: 'red',
+                pointBackgroundColor: 'red',
                 pointBorderColor: '#fff',
                 pointHoverBackgroundColor: '#fff',
-                pointHoverBorderColor: 'rgb(255, 99, 132)'
+                pointHoverBorderColor: 'red'
             }, {
-                label: 'My Second Dataset',
-                data: [28, 48, 40, 19, 96, 27, 100],
+                label: 'Đang điều trị',
+                data: treating,
                 fill: true,
-                backgroundColor: 'rgba(54, 162, 235, 0.2)',
-                borderColor: 'rgb(54, 162, 235)',
-                pointBackgroundColor: 'rgb(54, 162, 235)',
+                backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                borderColor: 'blue',
+                pointBackgroundColor: 'blue',
                 pointBorderColor: '#fff',
                 pointHoverBackgroundColor: '#fff',
-                pointHoverBorderColor: 'rgb(54, 162, 235)'
+                pointHoverBorderColor: 'blue'
+            }, {
+                label: 'Khỏi bệnh',
+                data: recovered,
+                fill: true,
+                backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                borderColor: 'green',
+                pointBackgroundColor: 'green',
+                pointBorderColor: '#fff',
+                pointHoverBackgroundColor: '#fff',
+                pointHoverBorderColor: 'green'
+            }, {
+                label: 'Tử vong',
+                data: death,
+                fill: true,
+                backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                borderColor: 'gray',
+                pointBackgroundColor: 'gray',
+                pointBorderColor: '#fff',
+                pointHoverBackgroundColor: '#fff',
+                pointHoverBorderColor: 'gray'
             }]
         },
         options: {
