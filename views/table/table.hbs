@@ -16,10 +16,10 @@
         <tr>
             <th scope="row">{{increaseIndex @index}}</th>
             <td>{{name}}</td>
-            <td>{{cases}} <small class="text-danger">↑{{casesToday}}</small></td>
-            <td>{{death}}</td>
-            <td class="text-center">{{treating}}</td>
-            <td class="text-center">{{recovered}}</td>
+            <td>{{formatUnitPeople cases}} <small class="text-danger">↑{{formatUnitPeople casesToday}}</small></td>
+            <td>{{formatUnitPeople death}}</td>
+            <td class="text-center">{{formatUnitPeople treating}}</td>
+            <td class="text-center">{{formatUnitPeople recovered}}</td>
         </tr>
         {{/each}}
     </tbody>

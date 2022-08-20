@@ -3,11 +3,11 @@ const moment = require('moment');
 
 exports.registerHelper = () => {
 
-    hbs.registerHelper("formatDateHelper", function (timestamp) {
-        return moment(timestamp, "X").utcOffset("+0700").format('HH:mm:ss DD/MM/YYYY');
+    hbs.registerHelper('formatDateHelper', function (timestamp) {
+        return moment(timestamp, 'X').utcOffset('+0700').format('HH:mm:ss DD/MM/YYYY');
     });
 
-    hbs.registerHelper("formatUnitPeople", function (numberOfPeople) {
+    hbs.registerHelper('formatUnitPeople', function (numberOfPeople) {
         return numberOfPeople.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,');
     });
 
