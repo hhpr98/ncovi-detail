@@ -28,4 +28,20 @@ exports.registerHelper = () => {
             return 'N/A';
         }
     });
+
+    hbs.registerHelper('formatUnitPeopleWithIcons', function (numberOfPeople) {
+        let resultFormater = numberOfPeople.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,');
+        let iconChar = '↑';
+        if (resultFormater.startsWith('-')) {
+            iconChar = '↓';
+            resultFormater = resultFormater.replace('-', '');
+        } else if (resultFormater === '0') {
+            iconChar = '';
+        }
+        return `${iconChar}${resultFormater}`;
+    });
+
+    hbs.registerHelper('renderCaseColor', function (numberOfPeople) {
+        return +numberOfPeople > 0 ? "text-danger" : "text-success";
+    });
 }
