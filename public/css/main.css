@@ -1,3 +1,14 @@
+/* For main layout */
+
+.main {
+    height: 95vh;
+    width: 100vw;
+    padding: 0 5vw 0 5vw;
+}
+
+
+/* For main content */
+
 .location {
     width: 120px;
     height: 40px;
@@ -13,19 +24,18 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 18vh;
-    border-left: 1vw white solid;
-    border-right: 1vw white solid;
 }
 
 .block-sub-title {
     font-size: 16px;
     font-weight: 600;
+    margin: 10px 0 10px 0;
 }
 
 .block-stats {
     font-size: 20px;
     font-weight: bold;
+    margin: 10px 0 10px 0;
 }
 
 .block-case {
