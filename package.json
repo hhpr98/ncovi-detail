@@ -1,6 +1,6 @@
 {
   "name": "ncovi-detail",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "private": true,
   "scripts": {
     "start": "node app.js",
