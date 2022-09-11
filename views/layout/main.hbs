@@ -11,22 +11,23 @@
   <link rel="stylesheet" href="/css/main.css" />
   <link rel="stylesheet" href="/css/table.css" />
   <link rel="stylesheet" href="/css/chart.css" />
+  <link rel="stylesheet" href="/css/footer.css" />
   {{!--
   <script src="/bootstrap/4.5.2/js/bootstrap.min.js"></script> --}}
   <script src="/js/chart/chart.min.js"></script>
 </head>
 
 <body>
-  <div class="container">
+  <div class="main">
     <nav class="nav bg-info">
       <a class="nav-link text-white header-nav-item" href="/">Trang chủ</a>
       <a class="nav-link text-white header-nav-item" href="/stats">Bảng biểu</a>
       <a class="nav-link text-white header-nav-item" href="/chart">Thống kê</a>
     </nav>
     {{{body}}}
-    <div class="bg-danger">
-      <p class="bg-dark text-light text-center">Copyright @2022 Nguyễn Hữu Hòa</p>
-    </div>
+  </div>
+  <div class="main footer">
+    <p class="bg-dark text-light text-center">Copyright @2022 Nguyễn Hữu Hòa</p>
   </div>
 </body>
 
