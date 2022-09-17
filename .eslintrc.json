@@ -1,0 +1,19 @@
+{
+    "ignorePatterns": [
+        "/node_modules",
+        "/public/bootstrap",
+        "/public/js/chart/chart.min.js"
+    ],
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es2021": true,
+        "node": true
+    },
+    "extends": "eslint:recommended",
+    "overrides": [],
+    "parserOptions": {
+        "ecmaVersion": "latest"
+    },
+    "rules": {}
+}
