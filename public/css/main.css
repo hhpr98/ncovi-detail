@@ -9,6 +9,12 @@
 
 /* For main content */
 
+.home-bounding {
+    height: 75vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
 .location {
     width: 120px;
     height: 40px;

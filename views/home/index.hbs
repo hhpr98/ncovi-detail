@@ -1,67 +1,77 @@
 <div class="bg-info text-center mt-4 header-title">
     <h3 class="text-white"><b>BẢNG TIN COVID19</b></h3>
 </div>
-{{!-- VietNam --}}
-<div class="text-white bg-success location mt-4">Việt Nam</div>
-<div class="row mt-4 mb-4">
-    <div class="col-6 col-sm-3 mt-2">
-        <div class="block block-case">
-            <div class="block-sub-title">SỐ CA NHIỄM</div>
-            <div class="block-stats text-danger">{{formatUnitPeople total.internal.cases}}</div>
-            <div class="mb-2">Hôm nay: <b class="text-danger">{{formatUnitPeopleWithIcons today.internal.cases}}</b></div>
+<div class="home-bounding">
+    {{!-- VietNam --}}
+    <div class="text-white bg-success location mt-4">Việt Nam</div>
+    <div class="row mt-4 mb-4">
+        <div class="col-6 col-sm-3 mt-2">
+            <div class="block block-case">
+                <div class="block-sub-title">SỐ CA NHIỄM</div>
+                <div class="block-stats text-danger">{{formatUnitPeople total.internal.cases}}</div>
+                <div class="mb-2">Hôm nay: <b class="text-danger">{{formatUnitPeopleWithIcons today.internal.cases}}</b>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 col-sm-3 mt-2">
+            <div class="block block-treating">
+                <div class="block-sub-title">ĐANG ĐIỀU TRỊ</div>
+                <div class="block-stats text-primary">{{formatUnitPeople total.internal.treating}}</div>
+                <div class="mb-2">Hôm nay: <b class="text-primary">{{formatUnitPeopleWithIcons
+                        today.internal.treating}}</b></div>
+            </div>
+        </div>
+        <div class="col-6 col-sm-3 mt-2">
+            <div class="block block-recovered">
+                <div class="block-sub-title">BÌNH PHỤC</div>
+                <div class="block-stats text-success">{{formatUnitPeople total.internal.recovered}}</div>
+                <div class="mb-2">Hôm nay: <b class="text-success">{{formatUnitPeopleWithIcons
+                        today.internal.recovered}}</b></div>
+            </div>
+        </div>
+        <div class="col-6 col-sm-3 mt-2">
+            <div class="block block-death">
+                <div class="block-sub-title">TỬ VONG</div>
+                <div class="block-stats text-secondary">{{formatUnitPeople total.internal.death}}</div>
+                <div class="mb-2">Hôm nay: <b class="text-secondary">{{formatUnitPeopleWithIcons
+                        today.internal.death}}</b></div>
+            </div>
         </div>
     </div>
-    <div class="col-6 col-sm-3 mt-2">
-        <div class="block block-treating">
-            <div class="block-sub-title">ĐANG ĐIỀU TRỊ</div>
-            <div class="block-stats text-primary">{{formatUnitPeople total.internal.treating}}</div>
-            <div class="mb-2">Hôm nay: <b class="text-primary">{{formatUnitPeopleWithIcons today.internal.treating}}</b></div>
+    {{!-- World --}}
+    <div class="text-white bg-success location">Thế giới</div>
+    <div class="row mt-4 mb-4">
+        <div class="col-6 col-sm-3 mt-2">
+            <div class="block block-case">
+                <div class="block-sub-title">SỐ CA NHIỄM</div>
+                <div class="block-stats text-danger">{{formatUnitPeople total.world.cases}}</div>
+                <div class="mb-2">Hôm nay: <b class="text-danger">{{formatUnitPeopleWithIcons today.world.cases}}</b>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="col-6 col-sm-3 mt-2">
-        <div class="block block-recovered">
-            <div class="block-sub-title">BÌNH PHỤC</div>
-            <div class="block-stats text-success">{{formatUnitPeople total.internal.recovered}}</div>
-            <div class="mb-2">Hôm nay: <b class="text-success">{{formatUnitPeopleWithIcons today.internal.recovered}}</b></div>
+        <div class="col-6 col-sm-3 mt-2">
+            <div class="block block-treating">
+                <div class="block-sub-title">ĐANG ĐIỀU TRỊ</div>
+                <div class="block-stats text-primary">{{formatUnitPeople total.world.treating}}</div>
+                <div class="mb-2">Hôm nay: <b class="text-primary">{{formatUnitPeopleWithIcons
+                        today.world.treating}}</b></div>
+            </div>
         </div>
-    </div>
-    <div class="col-6 col-sm-3 mt-2">
-        <div class="block block-death">
-            <div class="block-sub-title">TỬ VONG</div>
-            <div class="block-stats text-secondary">{{formatUnitPeople total.internal.death}}</div>
-            <div class="mb-2">Hôm nay: <b class="text-secondary">{{formatUnitPeopleWithIcons today.internal.death}}</b></div>
+        <div class="col-6 col-sm-3 mt-2">
+            <div class="block block-recovered">
+                <div class="block-sub-title">BÌNH PHỤC</div>
+                <div class="block-stats text-success">{{formatUnitPeople total.world.recovered}}</div>
+                <div class="mb-2">Hôm nay: <b class="text-success">{{formatUnitPeopleWithIcons
+                        today.world.recovered}}</b></div>
+            </div>
         </div>
-    </div>
-</div>
-{{!-- World --}}
-<div class="text-white bg-success location">Thế giới</div>
-<div class="row mt-4 mb-4">
-    <div class="col-6 col-sm-3 mt-2">
-        <div class="block block-case">
-            <div class="block-sub-title">SỐ CA NHIỄM</div>
-            <div class="block-stats text-danger">{{formatUnitPeople total.world.cases}}</div>
-            <div class="mb-2">Hôm nay: <b class="text-danger">{{formatUnitPeopleWithIcons today.world.cases}}</b></div>
-        </div>
-    </div>
-    <div class="col-6 col-sm-3 mt-2">
-        <div class="block block-treating">
-            <div class="block-sub-title">ĐANG ĐIỀU TRỊ</div>
-            <div class="block-stats text-primary">{{formatUnitPeople total.world.treating}}</div>
-            <div class="mb-2">Hôm nay: <b class="text-primary">{{formatUnitPeopleWithIcons today.world.treating}}</b></div>
-        </div>
-    </div>
-    <div class="col-6 col-sm-3 mt-2">
-        <div class="block block-recovered">
-            <div class="block-sub-title">BÌNH PHỤC</div>
-            <div class="block-stats text-success">{{formatUnitPeople total.world.recovered}}</div>
-            <div class="mb-2">Hôm nay: <b class="text-success">{{formatUnitPeopleWithIcons today.world.recovered}}</b></div>
-        </div>
-    </div>
-    <div class="col-6 col-sm-3 mt-2">
-        <div class="block block-death">
-            <div class="block-sub-title">TỬ VONG</div>
-            <div class="block-stats text-secondary">{{formatUnitPeople total.world.death}}</div>
-            <div class="mb-2">Hôm nay: <b class="text-secondary">{{formatUnitPeopleWithIcons today.world.death}}</b></div>
+        <div class="col-6 col-sm-3 mt-2">
+            <div class="block block-death">
+                <div class="block-sub-title">TỬ VONG</div>
+                <div class="block-stats text-secondary">{{formatUnitPeople total.world.death}}</div>
+                <div class="mb-2">Hôm nay: <b class="text-secondary">{{formatUnitPeopleWithIcons today.world.death}}</b>
+                </div>
+            </div>
         </div>
     </div>
 </div>
