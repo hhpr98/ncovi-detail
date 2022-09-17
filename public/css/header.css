@@ -3,6 +3,10 @@
     background-color: #1c8a9b;
 }
 
+.header-nav-title {
+    display: block;
+}
+
 .header-title {
     height: 10vh;
     display: flex;
