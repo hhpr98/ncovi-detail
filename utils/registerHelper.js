@@ -1,10 +1,11 @@
 const hbs = require('hbs');
-const moment = require('moment');
+const { DateTime } = require('luxon');
 
 exports.registerHelper = () => {
 
     hbs.registerHelper('formatDateHelper', function (timestamp) {
-        return moment(timestamp, 'X').utcOffset('+0700').format('HH:mm:ss DD/MM/YYYY');
+        const timer = DateTime.fromMillis(timestamp);
+        return timer.setLocale('vn').toFormat('HH:mm:ss dd/LL/yyyy');
     });
 
     hbs.registerHelper('formatUnitPeople', function (numberOfPeople) {
