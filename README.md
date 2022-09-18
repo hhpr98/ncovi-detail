@@ -80,17 +80,31 @@ Use the `README.md` to get started and get more information.
 
 ### Built With
 
+* NodeJS
+
 [![NodeJS][NodeJS.com]][NodeJS-url]
+
+* ExpressJS
 
 [![ExpressJS][ExpressJS.com]][ExpressJS-url]
 
-[![hbs][hbs.com]][hbs-url] (hbs view engine)
+* Handle bar view engine
+
+[![hbs][hbs.com]][hbs-url]
+
+* Eslint
 
 [![eslint][eslint.com]][eslint-url]
 
-[![Bootstrap][Bootstrap.com]][Bootstrap-url] (v5)
+* Bootstrap (v5)
 
-[![BootstrapIcons][Bootstrap.com]][BootstrapIcons-url] (Bootstrap Icons)
+[![Bootstrap][Bootstrap.com]][Bootstrap-url]
+
+* Bootstrap Icons
+
+[![BootstrapIcons][Bootstrap.com]][BootstrapIcons-url] 
+
+* Heroku deployment
 
 [![Heroku][Heroku.com]][Heroku-url]
 
@@ -229,7 +243,7 @@ Use this space to list resources you find helpful and would like to give credit 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/hhpr98
 [product-screenshot]: public/images//product/release-v2.PNG
-[NodeJS.com]: https://github.com/hhpr98/ncovi-detail/blob/main/public/images/product/Node.js_log-resize.svg
+[NodeJS.com]: https://github.com/hhpr98/ncovi-detail/blob/main/public/images/product/Node.js_logo-resize.svg
 [NodeJS-url]: https://nodejs.org/en/
 [ExpressJS.com]: https://github.com/hhpr98/ncovi-detail/blob/main/public/images/product/expressjs-ar21-resize.svg
 [ExpressJS-url]: https://expressjs.com/
