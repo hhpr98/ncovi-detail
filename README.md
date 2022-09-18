@@ -95,12 +95,10 @@ Use the `README.md` to get started and get more information.
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+This is all steps to setup and build this project
 
 ### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
+_Below is all prerequisites for this project._
 * npm
   ```sh
   npm install npm@latest -g
@@ -108,20 +106,20 @@ This is an example of how to list things you need to use the software and how to
 
 ### Installation
 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
+_Below is an example of how you can instruct your audience on installing and setting up your app._
 
-1. Get a free API Key at [https://example.com](https://example.com)
+1. Get an API data at [api](https://static.pipezero.com/covid/data.json)
 2. Clone the repo
    ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+   git clone https://github.com/hhpr98/ncovi-detail.git
    ```
 3. Install NPM packages
    ```sh
    npm install
    ```
-4. Enter your API in `config.js`
+4. Open any terminal and start `development` mode
    ```js
-   const API_KEY = 'ENTER YOUR API';
+   npm run dev
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -131,9 +129,11 @@ _Below is an example of how you can instruct your audience on installing and set
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+All documentation is available in [Documentation](https://github.com/hhpr98/ncovi-detail)
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+The deployment is available in [Site](https://ncovi-detail.herokuapp.com/)
+
+_For more examples, please refer to the [link](https://github.com/hhpr98/ncovi-detail)_
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -190,9 +190,9 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+Hoa Nguyen - [@hhpr98](https://github.com/hhpr98) - nguyenhuuhoa1998@gmail.com
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Project Link: [https://github.com/hhpr98/ncovi-detail](https://github.com/hhpr98/ncovi-detail)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -204,13 +204,7 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
 
 * [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
-* [Malven's Grid Cheatsheet](https://grid.malven.co/)
-* [Img Shields](https://shields.io)
 * [GitHub Pages](https://pages.github.com)
-* [Font Awesome](https://fontawesome.com)
-* [React Icons](https://react-icons.github.io/react-icons/search)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -229,16 +223,16 @@ Use this space to list resources you find helpful and would like to give credit 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/hhpr98
 [product-screenshot]: public/images//product/release-v2.PNG
-[NodeJS.com]: https://github.com/hhpr98/ncovi-detail/blob/main/public/images/product/Node.js_log.svg
+[NodeJS.com]: https://github.com/hhpr98/ncovi-detail/blob/main/public/images/product/Node.js_log-resize.svg
 [NodeJS-url]: https://nodejs.org/en/
-[ExpressJS.com]: https://github.com/hhpr98/ncovi-detail/blob/main/public/images/product/expressjs-ar21.svg
+[ExpressJS.com]: https://github.com/hhpr98/ncovi-detail/blob/main/public/images/product/expressjs-ar21-resize.svg
 [ExpressJS-url]: https://expressjs.com/
-[hbs.com]: https://github.com/hhpr98/ncovi-detail/blob/main/public/images/product/expressjs-ar21.svg
+[hbs.com]: https://github.com/hhpr98/ncovi-detail/blob/main/public/images/product/expressjs-ar21-resize.svg
 [hbs-url]: https://www.npmjs.com/package/hbs
-[eslint.com]: https://github.com/hhpr98/ncovi-detail/blob/main/public/images/product/eslint-ar21.svg
+[eslint.com]: https://github.com/hhpr98/ncovi-detail/blob/main/public/images/product/eslint-ar21-resize.svg
 [eslint-url]: https://eslint.org/
 [Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
 [Bootstrap-url]: https://getbootstrap.com/
 [BootstrapIcons-url]: https://icons.getbootstrap.com/
-[Heroku.com]: https://github.com/hhpr98/ncovi-detail/blob/main/public/images/product/heroku-ar21.svg
+[Heroku.com]: https://github.com/hhpr98/ncovi-detail/blob/main/public/images/product/heroku-ar21-resize.svg
 [Heroku-url]: https://www.heroku.com/
