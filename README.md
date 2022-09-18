@@ -80,13 +80,19 @@ Use the `README.md` to get started and get more information.
 
 ### Built With
 
-* [![NodeJS][NodeJS.com]][NodeJS-url]
-* [![ExpressJS][ExpressJS.com]][ExpressJS-url]
-* [![hbs][hbs.com]][hbs-url] (hbs view engine)
-* [![eslint][eslint.com]][eslint-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url] (v5)
-* [![BootstrapIcons][Bootstrap.com]][BootstrapIcons-url] (Bootstrap Icons)
-* [![Heroku][Heroku.com]][Heroku-url]
+[![NodeJS][NodeJS.com]][NodeJS-url]
+
+[![ExpressJS][ExpressJS.com]][ExpressJS-url]
+
+[![hbs][hbs.com]][hbs-url] (hbs view engine)
+
+[![eslint][eslint.com]][eslint-url]
+
+[![Bootstrap][Bootstrap.com]][Bootstrap-url] (v5)
+
+[![BootstrapIcons][Bootstrap.com]][BootstrapIcons-url] (Bootstrap Icons)
+
+[![Heroku][Heroku.com]][Heroku-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
