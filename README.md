@@ -81,31 +81,19 @@ Use the `README.md` to get started and get more information.
 ### Built With
 
 * NodeJS
-
-[![NodeJS][NodeJS.com]][NodeJS-url]
-
 * ExpressJS
-
-[![ExpressJS][ExpressJS.com]][ExpressJS-url]
-
 * Handle bar view engine
-
-[![hbs][hbs.com]][hbs-url]
-
 * Eslint
-
-[![eslint][eslint.com]][eslint-url]
-
 * Bootstrap (v5)
-
-[![Bootstrap][Bootstrap.com]][Bootstrap-url]
-
 * Bootstrap Icons
-
-[![BootstrapIcons][Bootstrap.com]][BootstrapIcons-url] 
-
 * Heroku deployment
 
+[![NodeJS][NodeJS.com]][NodeJS-url]
+[![ExpressJS][ExpressJS.com]][ExpressJS-url]
+[![hbs][hbs.com]][hbs-url]
+[![eslint][eslint.com]][eslint-url]
+[![Bootstrap][Bootstrap.com]][Bootstrap-url]
+[![BootstrapIcons][Bootstrap.com]][BootstrapIcons-url] 
 [![Heroku][Heroku.com]][Heroku-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
