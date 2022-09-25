@@ -80,20 +80,18 @@ Use the `README.md` to get started and get more information.
 
 ### Built With
 
-* NodeJS
-* ExpressJS
-* Handle bar view engine
-* Eslint
-* Bootstrap (v5)
-* Bootstrap Icons
-* Heroku deployment
+* [NodeJS](https://nodejs.org/en/)
+* [ExpressJS](https://expressjs.com/)
+* [Handle bar view engine](https://www.npmjs.com/package/hbs)
+* [Eslint](https://eslint.org/)
+* [Bootstrap (v5)](https://getbootstrap.com/)
+* [Bootstrap Icons](https://icons.getbootstrap.com/)
+* [Heroku deployment](https://www.heroku.com/)
 
 [![NodeJS][NodeJS.com]][NodeJS-url]
 [![ExpressJS][ExpressJS.com]][ExpressJS-url]
-[![hbs][hbs.com]][hbs-url]
 [![eslint][eslint.com]][eslint-url]
 [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-[![BootstrapIcons][Bootstrap.com]][BootstrapIcons-url] 
 [![Heroku][Heroku.com]][Heroku-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -116,7 +114,7 @@ _Below is all prerequisites for this project._
 
 _Below is an example of how you can instruct your audience on installing and setting up your app._
 
-1. Get an API data at [api](https://static.pipezero.com/covid/data.json)
+1. Check API status at [api](https://static.pipezero.com/covid/data.json)
 2. Clone the repo
    ```sh
    git clone https://github.com/hhpr98/ncovi-detail.git
@@ -235,12 +233,9 @@ Use this space to list resources you find helpful and would like to give credit 
 [NodeJS-url]: https://nodejs.org/en/
 [ExpressJS.com]: https://github.com/hhpr98/ncovi-detail/blob/main/public/images/product/expressjs-ar21-resize.svg
 [ExpressJS-url]: https://expressjs.com/
-[hbs.com]: https://github.com/hhpr98/ncovi-detail/blob/main/public/images/product/expressjs-ar21-resize.svg
-[hbs-url]: https://www.npmjs.com/package/hbs
 [eslint.com]: https://github.com/hhpr98/ncovi-detail/blob/main/public/images/product/eslint-ar21-resize.svg
 [eslint-url]: https://eslint.org/
 [Bootstrap.com]: https://github.com/hhpr98/ncovi-detail/blob/main/public/images/product/getbootstrap-ar21-resize.svg
 [Bootstrap-url]: https://getbootstrap.com/
-[BootstrapIcons-url]: https://icons.getbootstrap.com/
 [Heroku.com]: https://github.com/hhpr98/ncovi-detail/blob/main/public/images/product/heroku-ar21-resize.svg
 [Heroku-url]: https://www.heroku.com/
