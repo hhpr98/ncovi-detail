@@ -45,4 +45,8 @@ exports.registerHelper = () => {
     hbs.registerHelper('renderCaseColor', function (numberOfPeople) {
         return +numberOfPeople > 0 ? "text-danger" : "text-success";
     });
+
+    hbs.registerHelper('renderNavClass', (reqPath, currentPath) => {
+        return `nav-link text-white d-flex justify-content-center align-items-center header-nav-item${reqPath === currentPath ? ' header-selected' : ''}`
+    });
 }

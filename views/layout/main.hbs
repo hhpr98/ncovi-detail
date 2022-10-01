@@ -21,17 +21,17 @@
 <body>
   <div class="main">
     <nav class="nav bg-info">
-      <a class="nav-link text-white d-flex justify-content-center align-items-center header-nav-item" href="/">
+      <a class="{{renderNavClass path '/'}}" href="/">
         <img src="/images/icons/house-door.svg" alt="home" />
         &ensp;
         <span class="header-nav-title">Trang chủ</span>
       </a>
-      <a class="nav-link text-white d-flex justify-content-center align-items-center header-nav-item" href="/stats">
+      <a class="{{renderNavClass path '/stats'}}" href="/stats">
         <img src="/images/icons/file-spreadsheet.svg" alt="stats" />
         &ensp;
         <span class="header-nav-title">Bảng biểu</span>
       </a>
-      <a class="nav-link text-white d-flex justify-content-center align-items-center header-nav-item" href="/chart">
+      <a class="{{renderNavClass path '/chart'}}" href="/chart">
         <img src="/images/icons/bar-chart-line.svg" alt="chart" />
         &ensp;
         <span class="header-nav-title">Thống kê</span>
