@@ -1,10 +1,10 @@
 .header-selected {
-    background-color: rgb(14, 138, 173);
+    background-color: rgb(26, 186, 230);
 }
 
 .header-nav-item:hover {
     cursor: pointer;
-    background-color: rgb(14, 138, 173);
+    background-color: rgb(26, 186, 230);
 }
 
 .header-nav-title {
