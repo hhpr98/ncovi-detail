@@ -1,6 +1,6 @@
 const fetch = require('node-fetch');
 
-const defaultData = require('../data/data20220808.json');
+const defaultData = require('../data/data20221008.json');
 const { headers } = require('../utils/const/requestHeader');
 const { URL } = require('../API/URL');
 
