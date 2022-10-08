@@ -6,3 +6,5 @@ call heroku login
 call heroku git:remote -a ncovi-detail
 :: Deploy to heroku
 call git push heroku main
+:: open
+call heroku open

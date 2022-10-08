@@ -22,24 +22,33 @@
   <div class="main">
     <nav class="nav bg-info">
       <a class="{{renderNavClass path '/'}}" href="/">
-        <img src="/images/icons/house-door.svg" alt="home" />
+        <img class="header-nav-icon" src="/images/icons/house-door.svg" alt="home" />
         &ensp;
         <span class="header-nav-title">Trang chủ</span>
       </a>
       <a class="{{renderNavClass path '/stats'}}" href="/stats">
-        <img src="/images/icons/file-spreadsheet.svg" alt="stats" />
+        <img class="header-nav-icon" src="/images/icons/file-spreadsheet.svg" alt="stats" />
         &ensp;
         <span class="header-nav-title">Bảng biểu</span>
       </a>
       <a class="{{renderNavClass path '/chart'}}" href="/chart">
-        <img src="/images/icons/bar-chart-line.svg" alt="chart" />
+        <img class="header-nav-icon" src="/images/icons/bar-chart-line.svg" alt="chart" />
         &ensp;
         <span class="header-nav-title">Thống kê</span>
       </a>
     </nav>
+    {{!-- https://stackoverflow.com/questions/24352151/check-existence-of-a-variable-in-handlebar --}}
+    {{#if isError includeZero=true}}
+    <div class="mt-2 mb-2 modal-update">
+      <img src="/images/icons/exclamation-triangle-fill.svg" alt="warning" class="modal-update-icon" />
+      This data is out of update! We have a problem when getting data. Please raise new issue at
+      <a class="modal-update-issue" href="https://github.com/hhpr98/ncovi-detail/issues" target="_blank">link</a>
+    </div>
+    {{/if}}
+
     {{{body}}}
   </div>
-  <div class="main footer">
+  <div class="footer">
     <p class="bg-dark text-light text-center">Copyright @2022 Nguyễn Hữu Hòa</p>
   </div>
 </body>

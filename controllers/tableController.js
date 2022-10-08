@@ -1,6 +1,6 @@
 const fetch = require('node-fetch');
 
-const defaultData = require('../data/data20220808.json');
+const defaultData = require('../data/data20221008.json');
 const { headers } = require('../utils/const/requestHeader');
 const { URL } = require('../API/URL');
 
@@ -15,7 +15,11 @@ const getStatsForAllProvinces = (req, res) => {
         })
         .catch(() => {
             console.log('Invalid data. Using old data');
-            res.render('table/table', { locations: defaultData.locations, layout: 'layout/main' });
+            res.render('table/table', {
+                locations: defaultData.locations,
+                layout: 'layout/main',
+                isError: true,
+            });
         });
 }
 

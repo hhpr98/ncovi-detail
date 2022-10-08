@@ -7,12 +7,16 @@
     background-color: rgb(26, 186, 230);
 }
 
+.header-nav-icon {
+    filter: invert(92%) sepia(100%) saturate(0%) hue-rotate(159deg) brightness(109%) contrast(101%);
+}
+
 .header-nav-title {
     display: block;
 }
 
 .header-title {
-    height: 10vh;
+    height: 15vh;
     display: flex;
     flex-direction: column;
     justify-content: center;

@@ -6,6 +6,27 @@
     padding: 0 10vw 0 10vw;
 }
 
+.modal-update {
+    padding: 10px;
+    background-color: red;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+
+.modal-update-icon {
+    filter: invert(86%) sepia(38%) saturate(3966%) hue-rotate(359deg) brightness(104%) contrast(103%);
+    padding-right: 10px;
+}
+
+.modal-update-issue {
+    text-decoration: none;
+    padding-left: 10px;
+    margin-top: 2px;
+}
+
 
 /* For main content */
 

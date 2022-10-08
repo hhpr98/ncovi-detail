@@ -1,6 +1,6 @@
 const fetch = require('node-fetch');
 
-const defaultData = require('../data/data20220808.json');
+const defaultData = require('../data/data20221008.json');
 const { headers } = require('../utils/const/requestHeader');
 const { URL } = require('../API/URL');
 
@@ -15,7 +15,12 @@ const getStatsForHomePage = (req, res) => {
         })
         .catch(() => {
             console.log('Invalid data. Using old data');
-            res.render('home/index', { total: defaultData.total, today: defaultData.today, layout: 'layout/main' });
+            res.render('home/index', {
+                total: defaultData.total,
+                today: defaultData.today,
+                layout: 'layout/main',
+                isError: true,
+            });
         });
 }
 
