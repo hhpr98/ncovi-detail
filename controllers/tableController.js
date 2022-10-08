@@ -15,7 +15,11 @@ const getStatsForAllProvinces = (req, res) => {
         })
         .catch(() => {
             console.log('Invalid data. Using old data');
-            res.render('table/table', { locations: defaultData.locations, layout: 'layout/main' });
+            res.render('table/table', {
+                locations: defaultData.locations,
+                layout: 'layout/main',
+                isError: true,
+            });
         });
 }
 

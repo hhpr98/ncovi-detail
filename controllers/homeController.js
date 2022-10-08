@@ -15,7 +15,12 @@ const getStatsForHomePage = (req, res) => {
         })
         .catch(() => {
             console.log('Invalid data. Using old data');
-            res.render('home/index', { total: defaultData.total, today: defaultData.today, layout: 'layout/main' });
+            res.render('home/index', {
+                total: defaultData.total,
+                today: defaultData.today,
+                layout: 'layout/main',
+                isError: true,
+            });
         });
 }
 

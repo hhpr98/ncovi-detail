@@ -29,6 +29,7 @@ const getChartData = (req, res) => {
                 recovered: defaultData.overview.map((item) => item.recovered),
                 death: defaultData.overview.map((item) => item.death),
                 layout: 'layout/main',
+                isError: true,
             });
         });
 }
