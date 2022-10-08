@@ -15,5 +15,15 @@
     "parserOptions": {
         "ecmaVersion": "latest"
     },
-    "rules": {}
+    "rules": {
+        "max-len": [
+            "warn",
+            {
+                "code": 100,
+                "comments": 80,
+                "ignoreUrls": true,
+                "tabWidth": 4
+            }
+        ]
+    }
 }

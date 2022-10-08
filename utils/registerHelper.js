@@ -47,7 +47,8 @@ exports.registerHelper = () => {
     });
 
     hbs.registerHelper('renderNavClass', (reqPath, currentPath) => {
-        return `nav-link text-white d-flex justify-content-center align-items-center header-nav-item${reqPath === currentPath ? ' header-selected' : ''}`
+        return `nav-link text-white d-flex justify-content-center
+        align-items-center header-nav-item${reqPath === currentPath ? ' header-selected' : ''}`
     });
 
     hbs.registerHelper('getDateUpdated', () => {

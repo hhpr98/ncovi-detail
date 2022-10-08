@@ -11,7 +11,11 @@ const getStatsForHomePage = (req, res) => {
     })
         .then(data => data.json())
         .then(data => {
-            res.render('home/index', { total: data.total, today: data.today, layout: 'layout/main' });
+            res.render('home/index', {
+                total: data.total,
+                today: data.today,
+                layout: 'layout/main',
+            });
         })
         .catch(() => {
             console.log('Invalid data. Using old data');
