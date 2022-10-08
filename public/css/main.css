@@ -8,20 +8,22 @@
 
 .modal-update {
     padding: 10px;
-    background-color: rgb(202, 28, 28);
+    background-color: red;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50px;
+    height: 10vh;
 }
 
 .modal-update-icon {
     filter: invert(86%) sepia(38%) saturate(3966%) hue-rotate(359deg) brightness(104%) contrast(103%);
+    padding-right: 10px;
 }
 
 .modal-update-issue {
     text-decoration: none;
+    padding-left: 10px;
 }
 
 
