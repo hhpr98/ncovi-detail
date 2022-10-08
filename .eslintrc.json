@@ -24,6 +24,9 @@
                 "ignoreUrls": true,
                 "tabWidth": 4
             }
+        ],
+        "no-restricted-modules": [
+            "error"
         ]
     }
 }
