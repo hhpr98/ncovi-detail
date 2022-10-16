@@ -157,8 +157,16 @@ _For more examples, please refer to the [link](https://github.com/hhpr98/ncovi-d
 - [x] Support mobile device
 - [x] Added eslint check
 - [x] Update documentation
-- [ ] Enhance UI
-- [ ] Fix bugs
+- [X] Enhance UI
+  - [X] Support mobile resolution
+  - [X] Refactor NAV bar (icons and mobile resolution)
+  - [X] Add datetime that sync the data
+  - [X] Add modal to notify if can not get the data
+  - [X] Add icons
+- [X] Fix bugs
+  - [X] UI bugs
+  - [X] Detection issues
+- [X] Enhance lint check (add more rules)
 
 See the [open issues](https://github.com/hhpr98/ncovi-detail/issues) for a full list of proposed features (and known issues).
 
@@ -228,7 +236,7 @@ Use this space to list resources you find helpful and would like to give credit 
 [issues-url]: https://github.com/hhpr98/ncovi-detail/issues
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/hhpr98
-[product-screenshot]: public/images//product/release-v2.PNG
+[product-screenshot]: public/images//product/release-v2.2.9.png
 [NodeJS.com]: https://github.com/hhpr98/ncovi-detail/blob/main/public/images/product/Node.js_logo-resize.svg
 [NodeJS-url]: https://nodejs.org/en/
 [ExpressJS.com]: https://github.com/hhpr98/ncovi-detail/blob/main/public/images/product/expressjs-ar21-resize.svg
