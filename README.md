@@ -63,7 +63,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://ncovi-detail.herokuapp.com/)
+[![Product Name Screen Shot][product-screenshot]](https://ncovi.up.railway.app/)
 
 There are having many app with many data about the covid 19 data. We want to centralize them and make people have a overview for this dangerous disease.
 
@@ -137,7 +137,7 @@ _Below is an example of how you can instruct your audience on installing and set
 
 All documentation is available in [Documentation](https://github.com/hhpr98/ncovi-detail)
 
-The deployment is available in [Site](https://ncovi-detail.herokuapp.com/)
+The deployment is available in [Site](https://ncovi.up.railway.app/) (Backup: [backup](https://ncovi.cyclic.app/))
 
 _For more examples, please refer to the [link](https://github.com/hhpr98/ncovi-detail)_
 
@@ -167,6 +167,9 @@ _For more examples, please refer to the [link](https://github.com/hhpr98/ncovi-d
   - [X] UI bugs
   - [X] Detection issues
 - [X] Enhance lint check (add more rules)
+- [X] Remove heroku deployment (not supported)
+- [X] New deployment [Railway](https://ncovi.up.railway.app/)
+- [X] New deployment [Cyclic](https://ncovi.cyclic.app/)
 
 See the [open issues](https://github.com/hhpr98/ncovi-detail/issues) for a full list of proposed features (and known issues).
 
@@ -236,7 +239,7 @@ Use this space to list resources you find helpful and would like to give credit 
 [issues-url]: https://github.com/hhpr98/ncovi-detail/issues
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/hhpr98
-[product-screenshot]: public/images//product/release-v2.2.9.png
+[product-screenshot]: public/images//product/release-v2.2.10.png
 [NodeJS.com]: https://github.com/hhpr98/ncovi-detail/blob/main/public/images/product/Node.js_logo-resize.svg
 [NodeJS-url]: https://nodejs.org/en/
 [ExpressJS.com]: https://github.com/hhpr98/ncovi-detail/blob/main/public/images/product/expressjs-ar21-resize.svg
