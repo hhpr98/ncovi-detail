@@ -105,9 +105,9 @@ This is all steps to setup and build this project
 
 ### Prerequisites
 _Below is all prerequisites for this project._
-* npm
+* nodejs [Download](https://nodejs.org/en)
   ```sh
-  npm install npm@latest -g
+  v18.16.0
   ```
 
 ### Installation
